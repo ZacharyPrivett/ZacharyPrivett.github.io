@@ -20,7 +20,7 @@ footer
 
 figure
 {
-    border: thin #4A051C solid;
+    /*border: thin #4A051C solid;*/
     display: flex;
     flex-flow: column;
     padding: 5px;
