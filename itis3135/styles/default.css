@@ -3,7 +3,7 @@ body
   font-family: Tahoma, sans-serif;
   color: #AD7A99;
   background-color: #B2CEDE;
-  text-align: center;
+  /*text-align: center; */
 }
 
 header
@@ -11,11 +11,16 @@ header
   font-family: Courier, serif;
   text-align: center; 
   color: #011627; 
-} 
+}
+
+footer  
+{
+    text-align: center;
+}
 
 figure
 {
-    border: thin #c0c0c0 solid;
+    border: thin #4A051C solid;
     display: flex;
     flex-flow: column;
     padding: 5px;
@@ -26,17 +31,43 @@ figure
 img
 {
     max-width: 220px;
-    max-height: 150px;
+    max-height: 320px;
 }
 
 figcaption
 {
-    background-color: #222;
-    color: #fff;
+    background-color: #B2CEDE;
+    color: #4A051C;
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
 }
+ h2
+ {
+     text-align: center;
+ }
+
+ .center-text
+ {
+     text-align: center;
+ }
+
+ p{
+     padding-left: 5%;
+     padding-right: 5%;
+ }
+
+ li
+ {
+     padding-top: 6px;
+     padding-bottom: 6px;
+ }
+
+ ul
+ {
+     padding-left: 5%;
+     padding-right: 5%;
+ }
 
 
 
