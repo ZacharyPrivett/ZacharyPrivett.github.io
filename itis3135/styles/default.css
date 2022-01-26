@@ -1,7 +1,7 @@
 body
 {
-  font-family: Tahoma, sans-serif;
-  color: #AD7A99;
+  font-family:Arial, sans-serif;
+  color: #9A031E ;
   background-color: #B2CEDE;
   /*text-align: center; */
 }
@@ -10,7 +10,7 @@ header
 {
   font-family: Courier, serif;
   text-align: center; 
-  color: #011627; 
+  color: #585156; 
 }
 
 footer  
@@ -28,7 +28,7 @@ figure
     margin: auto;
 }
 
-img
+.photo_img
 {
     max-width: 220px;
     max-height: 320px;
@@ -68,6 +68,12 @@ figcaption
      padding-left: 5%;
      padding-right: 5%;
  }
+
+.green
+{
+    color: 678D58;
+}
+
 
 
 
