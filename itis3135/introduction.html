@@ -51,18 +51,24 @@
             </ul>
  
         </main>
-        <footer class = "center-text">
+        <footer>
             <div>
-                <a>Github</a> :
-                <a>Codecademy</a> :
-                <a>FreeCodeCamp</a> :
-                <a>JSFiddle</a> :
-                <a>LinkedIn</a>
+                <a href = "https://github.com/ZacharyPrivett">Github</a> :
+                <a href = "https://www.codecademy.com/profiles/Zprivett" >Codecademy</a> :
+                <a href = "https://www.freecodecamp.org/fccde2553d0-9d24-4dbe-9f2c-385c16b15781">FreeCodeCamp</a> :
+                <a href = "https://jsfiddle.net/user/Zprivett">JSFiddle</a> :
+                <a href="https://www.linkedin.com/in/zachary-privett-47315a223/">LinkedIn</a>
             </div>
 
-            <br>Designed by Privett Enterprise &copy;2022.<br><br>
-            <a href = "https://www.w3schools.com/css/default.asp"> <img src = "images/button_validation_css.png"></a> 
-            <a href = "https://www.w3schools.com/html/default.asp"><img src = "images/button_validation_html5.png"></a>
+            Designed by Privett Enterprise &copy;2022.<br><br>   
+            <a href = "https://validator.w3.org/check?uri=" id = "validation_link_html"><img src = "images/button_validation_html5.png"></a>
+
+            <a href = "https://jigsaw.w3.org/css-validator/check/referer?uri=" id = "validation_link_css" > <img src = "images/button_validation_css.png"></a>
+            <script>		
+                document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
+                
         </footer>
        
     </body>

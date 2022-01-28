@@ -36,16 +36,16 @@ figure
     flex-flow: column;
     padding: 5px;
     max-width: 420px;
-    
     margin: auto;
+    padding-bottom: 20px;
 }
 
 figcaption
 {
     background-color: #B2CEDE;
     color: #4A051C;
-    font: italic smaller sans-serif;
-    padding: 3px;
+    font: italic sans-serif;
+    padding: 10px;
     text-align: center;
 }
  h2
@@ -94,9 +94,10 @@ figcaption
      
  }
 
-.green
+main
 {
-    color: 678D58;
+    
+    padding-bottom: 40px;
 }
 
 
