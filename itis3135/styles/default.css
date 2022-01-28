@@ -11,6 +11,7 @@ header
   font-family: Courier, sans-serif;
   text-align: center; 
   color: #585156; 
+  background-color: #4F9D69;
 }
 
 h2
@@ -24,7 +25,8 @@ footer
 {
     padding-top: 20px;
     text-align: center;
-    color: #5f0f40; 
+    color: #585156 ; 
+    background-color: #4F9D69;
 }
 
 figure
@@ -76,6 +78,10 @@ figcaption
  div
  {
     color: #FFBF46;
+    background-color: #4F9D69;
+    padding-bottom: 40px;
+    
+    
     
  }
 
@@ -85,6 +91,7 @@ figcaption
      font-family:Arial, sans-serif;
      text-decoration: none;
      font-size: 20px;
+     
  }
 
 .green
