@@ -1,7 +1,7 @@
 body
 {
   font-family:Arial, sans-serif;
-  color: #9A031E ;
+  color: #585156 ;
   background-color: #B2CEDE;
   /*text-align: center; */
 }
@@ -15,6 +15,7 @@ header
 
 footer  
 {
+    padding-top: 20px;
     text-align: center;
     color: #5f0f40; 
 }
@@ -29,9 +30,9 @@ figure
     margin: auto;
 }
 
-.photo_img
+figure img
 {
-    max-width: 220px;
+    max-width: 250px;
     max-height: 320px;
 }
 
@@ -68,6 +69,16 @@ figcaption
  {
      padding-left: 5%;
      padding-right: 5%;
+ }
+
+ div
+ {
+     background-color: #07004D ;
+     color: #FFFD98;
+     padding: auto;
+     text-decoration: none;
+
+    
  }
 
 .green
