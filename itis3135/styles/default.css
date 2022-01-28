@@ -29,7 +29,7 @@ footer
     background-color: #4F9D69;
 }
 
-figure
+.figure
 {
     
     display: flex;
@@ -40,11 +40,11 @@ figure
     padding-bottom: 20px;
 }
 
-figcaption
+.figcaption
 {
     background-color: #B2CEDE;
     color: #4A051C;
-    font: italic sans-serif;
+    font: italic serif;
     padding: 10px;
     text-align: center;
 }
@@ -98,6 +98,48 @@ main
 {
     
     padding-bottom: 40px;
+}
+
+table
+{
+    border: 5px solid black;
+}
+
+td
+{
+    border: 2px solid black;
+}
+
+th
+{
+    border: 3px solid black;
+}
+
+figure table tr:nth-child(even)
+{
+    background-color: #777;
+    color: #fff;
+}
+
+figure table tr:nth-child(odd)
+{
+    background-color: #999;
+    color: #fff;
+}
+
+figure table tr:nth-child(1)
+{
+    background-color: black;
+    color: #fff;
+}
+
+.figcaption2
+{
+   
+    font: italic serif;
+    padding: 10px;
+    margin-left: 300px;
+
 }
 
 
