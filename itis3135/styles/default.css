@@ -8,9 +8,16 @@ body
 
 header
 {
-  font-family: Courier, serif;
+  font-family: Courier, sans-serif;
   text-align: center; 
   color: #585156; 
+}
+
+h2
+{
+    color: #EE5622;
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
 }
 
 footer  
@@ -22,18 +29,13 @@ footer
 
 figure
 {
-    /*border: thin #4A051C solid;*/
+    
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 220px;
+    max-width: 420px;
+    
     margin: auto;
-}
-
-figure img
-{
-    max-width: 250px;
-    max-height: 320px;
 }
 
 figcaption
@@ -73,12 +75,16 @@ figcaption
 
  div
  {
-     background-color: #07004D ;
-     color: #FFFD98;
-     padding: auto;
-     text-decoration: none;
-
+    color: #FFBF46;
     
+ }
+
+ div a 
+ {
+     color: #FFBF46;
+     font-family:Arial, sans-serif;
+     text-decoration: none;
+     font-size: 20px;
  }
 
 .green

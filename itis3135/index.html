@@ -7,26 +7,30 @@
     <title>Zachary Privett | ITIS 3135 | Zulu Parrot home 
     </title>
     <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
 
 </head>
 <meta charset = "utf-8">
 
     <body>
+
+
         <header>
             <h1>Zachary Privett | ITIS 3135 | Zulu Parrot</h1>
 
             <div>
+                <a href = "index.html">Home</a> :
                 <a href = "introduction.html">Introduction</a>  :
                 <a href = "contract.html">Contract</a> :
                 <a href = "/">Personal</a>
             </div>
-        
+
         </header>
         <main>
-            
             <h2>Course Home Page</h2>
-
-
+            
             <p class = "center-text">This is my home page for ITIS-3135</p>
 
         </main>
@@ -36,12 +40,18 @@
                 <a>Codecademy</a> :
                 <a>FreeCodeCamp</a> :
                 <a>JSFiddle</a> :
-                <a href="https://www.linkedin.com/feed/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/zachary-privett-47315a223/">LinkedIn</a>
             </div>
 
-            <br>Designed by Privett Enterprise &copy;2022.<br><br>
-            <a href = "https://www.w3schools.com/css/default.asp"> <img src = "images/button_validation_css.png"></a> 
-            <a href = "https://www.w3schools.com/html/default.asp"><img src = "images/button_validation_html5.png"></a>
+            <br>Designed by Privett Enterprise &copy;2022.<br><br>   
+            <a href = "https://validator.w3.org/check?uri=" id = "validation_link_html"><img src = "images/button_validation_html5.png"></a>
+
+            <a href = "https://jigsaw.w3.org/css-validator/check/referer?uri=" id = "validation_link_css" > <img src = "images/button_validation_css.png"></a>
+            <script>		
+                document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
+                
         </footer>
        
     </body>
