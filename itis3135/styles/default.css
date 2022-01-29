@@ -124,6 +124,11 @@ th
     border: 3px solid black;
 }
 
+figure
+{
+    padding-left: 0px;
+}
+
 figure table tr:nth-child(even)
 {
     background-color: #777;
