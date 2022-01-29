@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+
+    <meta charset = "utf-8">
+    <style>
+        body
+        {
+            background-color: aqua;
+        }
+        h1
+        {
+            color: blueviolet;
+        }
+        h2
+        {
+            color: rgb(201, 18, 192);
+        }
+    </style>
+</head>
+
+    <body>
+
+        <header>
+
+            <h1>Welcome to Privett Enterprise</h1>
+
+        </header>
+
+            <main>
+            
+                <h2>Check back later to for updates</h2>
+            
+
+            </main>
+                <footer>
+   
+                    <a href = "https://validator.w3.org/check?uri=" id = "validation_link_html"><img src = "images/button_validation_html5.png" alt = "button_validation_html5"></a>
+                    <a href = "https://jigsaw.w3.org/css-validator/check/referer?uri=" id = "validation_link_css" > <img src = "images/button_validation_css.png" alt = "button_validation_css"></a>
+
+                    <script>
+
+                        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+                    </script>
+                
+            </footer>
+       
+    </body>
+
+</html>
