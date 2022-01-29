@@ -44,7 +44,7 @@ footer
 {
     background-color: #B2CEDE;
     color: #4A051C;
-    font: italic serif;
+    font-style: italic;
     padding: 10px;
     text-align: center;
 }
@@ -80,6 +80,7 @@ footer
     color: #FFBF46;
     background-color: #4F9D69;
     padding-bottom: 40px;
+    font-size: 20px;
     
     
     
@@ -136,7 +137,7 @@ figure table tr:nth-child(1)
 .figcaption2
 {
    
-    font: italic serif;
+    font: italic;
     padding: 10px;
     margin-left: 300px;
 
