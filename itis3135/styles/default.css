@@ -12,6 +12,8 @@ header
   text-align: center; 
   color: #585156; 
   background-color: #4F9D69;
+  padding-top: 1px;
+  
   
 }
 
@@ -28,6 +30,7 @@ footer
     font-family: Courier, sans-serif;
     font-size: 20px;
     padding-top: 20px;
+    padding-bottom: 15px;
     text-align: center;
     color: #585156 ; 
     background-color: #4F9D69;
@@ -71,18 +74,22 @@ footer a
 p{
     padding-left: 5%;
     padding-right: 5%;
+    text-align: justify;
 }
 
 li
 {
     padding-top: 6px;
     padding-bottom: 6px;
+    text-align: justify;
 }
 
 ul
 {
+    margin-top: 11px;
     padding-left: 5%;
     padding-right: 5%;
+    text-align: justify;
 }
 
 div
@@ -122,11 +129,6 @@ td
 th
 {
     border: 3px solid black;
-}
-
-figure
-{
-    padding-left: 0px;
 }
 
 figure table tr:nth-child(even)
