@@ -1,28 +1,44 @@
 body
 {
   font-family: Arial, sans-serif;
-  color: #585156 ;
-  background-color: #B2CEDE;
-  /*text-align: center; */
+  color: #13262F ;
+  background-color: #B0A084;
 }
 
 header
 {
   font-family: Courier, sans-serif;
+  font-size: larger;
   text-align: center; 
-  color: #585156; 
-  background-color: #4F9D69;
-  padding-top: 1px;
-  
-  
+  color: #583E23; 
 }
+
 
 h2
 {
-    color: #EE5622;
+    color: #13262F;
     font-family: 'Italianno', cursive;
     font-size: 60px;
     text-align: center;
+}
+
+h3
+{
+    color: #13262F;
+    font-family: Arial, sans-serif;
+    margin-left: 5%;
+}
+
+h3 a
+{
+    color: #E9E6FF;
+    font-family:Arial, sans-serif;
+    text-decoration: none;
+}
+
+.ulextrapad
+{
+    margin-left: 3%;
 }
 
 footer  
@@ -32,14 +48,12 @@ footer
     padding-top: 20px;
     padding-bottom: 15px;
     text-align: center;
-    color: #585156 ; 
-    background-color: #4F9D69;
-    
+    color: #73683B; 
 }
 footer a
 {
     font-family: Courier, sans-serif;
-    color: #585156 ;
+    color: #E9E6FF;
     text-decoration: none;
     font-size: 20px;
 }
@@ -58,8 +72,8 @@ footer a
 
 .figcaption
 {
-    background-color: #B2CEDE;
-    color: #4A051C;
+    background-color: #B0A084;
+    color: #13262F;
     font-style: italic;
     padding: 5px;
     text-align: center;
@@ -94,8 +108,7 @@ ul
 
 div
 {
-    color: #FFBF46;
-    background-color: #4F9D69;
+    color: #E9E6FF;
     padding-bottom: 20px;
     font-size: 20px;
     
@@ -103,7 +116,7 @@ div
 
  div a 
 {
-    color: #FFBF46;
+    color: #E9E6FF;
     font-family:Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
@@ -166,6 +179,11 @@ form
 form p
 {
     padding-left: 0px;
+}
+header img 
+{
+    max-width: 50px;
+    max-height: 50px;
 }
 
 
