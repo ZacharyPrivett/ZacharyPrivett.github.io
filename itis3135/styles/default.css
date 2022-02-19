@@ -26,7 +26,9 @@ h3
 {
     color: #13262F;
     font-family: Arial, sans-serif;
-    margin-left: 5%;
+    text-align: center;
+    margin-bottom: 100px;
+    
 }
 
 h3 a
@@ -185,6 +187,43 @@ header img
     max-width: 50px;
     max-height: 50px;
 }
+
+main div
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #13262F;
+}
+
+.p-normal
+{
+    padding-left: 0%;
+}
+
+.button
+{
+    margin-left: 200px;
+}
+
+.space
+{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.b-space
+{
+    padding-bottom: 3%;
+}
+
+.t-space
+{
+    padding-top: 3%;
+}
+
+
+
+
 
 
 

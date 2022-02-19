@@ -38,7 +38,78 @@ function welcome()
 
 function rollDice()
 {
-    
+    var random = Math.floor(Math.random() * 12) + 1;
+    document.getElementById("rolldice").innerHTML = random;
 }
 
+function numberSquared()
+{
+    let uNum = document.getElementById("numsquare").value;
+
+        if (isNaN(uNum))
+        {
+            document.getElementById("numsq").innerHTML = "Please enter a number"
+        }
+        else 
+        {
+            let numSquared = uNum * uNum;
+            let squaredOutput = uNum + " Squared is: " + numSquared;
+            document.getElementById("numsq").innerHTML = squaredOutput; 
+        }
+
+}
+
+function dessertRecipe()
+{
+  
+    var x = 0;
     
+    let dessertNameArray = new Array("Frozen Bannana Cereal Pops");
+
+    let timeArray = new Array("15 min. + freezing");
+
+    let ingredientsArray = new Array("3/4 cups strawberry yogurt, 2 cups Fruity Pebbles cerearl, 4 medium bananas, peeled and cut crosswise in half, and 8 wooden pop sticks");
+
+    let instruction1 = "<br>1. Place yogurt and cereal in separate shallow bowls. Insert pop sticks through cut side of bananas. "
+    + "Dip bananas in yogurt, then roll in cereal to coat. Transfer to waxed paper-lined baking sheets."
+    + "<br>2. Freeze until firm, about 1 hour. Transfer to airtight freezer containers; seal containers and return pops to freezer.";
+    
+    let instructionArray = new Array(instruction1);
+  
+    let recipeOutput = dessertNameArray[x] +  "<br><br>Time: " + timeArray[x] + "<br><br>Ingredients: " + ingredientsArray[x] + "<br><br>Directions: " + instructionArray[0];
+    
+    document.getElementById("dessert").innerHTML = recipeOutput;
+}
+
+function restaurantRecomendation()
+{
+    var y = Math.floor(Math.random() * 10);
+
+    let restuarants = new Array("Kindred", "Peppervine", "Bardo", "The Stanley", "The Fig Tree", "Stagioni", "Soul Gastrolounge", "Barrington's", "Rooster's Wood-fired Kitchen", "Good Food on Montford")
+
+    document.getElementById("restaurant").innerHTML = restuarants[y]
+}
+
+function tipCalculator()
+{
+    let billAmount = parseFloat(document.getElementById("amount").value);
+
+    if (isNaN(billAmount))
+    {
+        document.getElementById("tip").innerHTML = "Please Enter";
+        document.getElementById("total").innerHTML = "a Numebr";
+    }
+    else
+    {
+        let standardTip = .2;
+        let tipAmount = billAmount * standardTip;
+        let total = billAmount + tipAmount;
+        document.getElementById("tip").innerHTML = "Tip: $"  + tipAmount.toFixed(2);
+        document.getElementById("total").innerHTML = "Total: $" + total.toFixed(2);
+    }
+}
+
+
+
+
+

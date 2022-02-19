@@ -31,7 +31,7 @@
         </header>
             <main>
                 <h2>First Scripts</h2>
-                <span>
+                <div>
                     <h3 id = "date"></h3>
 
                     <label for = "name">What is your name?</label>
@@ -40,12 +40,32 @@
                     <label for = "mood">How are you feeling today?</label>
                     <input type = "text" id = "mood" name = "mood"><br><br>
 
-                    <button onclick = "welcome()"> Submit</button><br><br>
-                    <p id = "wel-message"></p>
+                    <button onclick = "welcome()" class = "button"> Submit</button><br><br>
+                    <p id = "wel-message" class = "normal"></p>
 
+                    <label for = "numsquare">Enter a number:</label>
+                    <input type = "text" id = "numsquare">
 
+                    <button onclick = "numberSquared()">Square</button>
+                    <p id = "numsq"></p>
 
-                </span>
+                    <button onclick = "rollDice()" class = "button">Roll the Dice</button>
+                    <p id = "rolldice"></p>
+
+                    <p class = "p-normal t-space">Click button for a dessert recipe</p>
+                    <button onclick = "dessertRecipe()">Recipe</button>
+                    <p id = "dessert" class = ""></p>
+                    
+                    <p class = "p-normal t-space">Click button for a restaurant recomendation</p>
+                    <button onclick = "restaurantRecomendation()">Restaurants</button>
+                    <p id = "restaurant" class = "b-space"></p>
+
+                    <label for = "amount">Tip Calulator:</label>
+                    <input type = "text" id = "amount" placeholder = "Enter Amount">
+                    <button onclick = "tipCalculator()">Calculate Tip</button>
+                    <p id = "tip"></p>
+                    <p id = "total"></p> 
+                </div>
             </main>
         <footer>
             <div>
