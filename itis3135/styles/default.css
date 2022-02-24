@@ -26,8 +26,9 @@ h3
 {
     color: #13262F;
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     
 }
 
@@ -198,6 +199,7 @@ main div
 .p-normal
 {
     padding-left: 0%;
+    margin-left: 0%;
 }
 
 .button
