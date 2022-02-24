@@ -109,7 +109,9 @@ function tipCalculator()
     }
 }
 
-
+/*
+    This is all my code Zachary Privett
+*/
 
 function polygon()
 {
@@ -159,7 +161,7 @@ function validateEntry(question)
 
 function zoltan()
 {
-    alert("The Continuum transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power")
+    alert("The Continuum transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power");
 }
 
 
