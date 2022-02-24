@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Zachary Privett | ITIS 3135 | Zulu Parrot First Scripts</title> 
+    <title>Zachary Privett | ITIS 3135 | Zulu Parrot Polygons</title> 
     
     <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 <meta charset = "utf-8">
 
 </head>
-    <body onload = "timeDate()">
+    <body onload="polygon()">
         <header>
             <h1><a href = "index.html"><img src = "images/parrot_logo.png" alt = "parrot_logo"></a> Privett | ITIS 3135 | Zulu Parrot</h1>
 
@@ -28,45 +28,16 @@
                 <a href = "website_evaluations.html">Website Evaluations</a> :
                 <a href = "firstscripts.html">First Scripts</a>
             </div>
+
         </header>
-            <main>
-                <h2>First Scripts</h2>
-                <div>
-                    <h3 id = "date"></h3>
+        <main>
+            <h2>Polygons</h2>
+            
+            <p class = "center-text" id = "cont">This page asks for a number from 3-10 and displays the name of the polygon with that amount of sides.</p>
+            <p class = "center-text" id = "user-polygon"></p>
+            <p class = "center-text" id = "zoltan">Reload this page to input a different number</p>
 
-                    <label for = "name">What is your name?</label>
-                    <input type = "text" id = "name" name = "name"><br><br>
-
-                    <label for = "mood">How are you feeling today?</label>
-                    <input type = "text" id = "mood" name = "mood"><br><br>
-
-                    <button onclick = "welcome()" class = "button"> Submit</button><br><br>
-                    <p id = "wel-message" class = "p-normal b-space"></p>
-
-                    <label for = "numsquare">Enter a number:</label>
-                    <input type = "text" id = "numsquare">
-
-                    <button onclick = "numberSquared()">Square</button>
-                    <p id = "numsq"></p>
-
-                    <button onclick = "rollDice()" class = "button">Roll the Dice</button>
-                    <p id = "rolldice"></p>
-
-                    <p class = "p-normal t-space">Click button for a dessert recipe</p>
-                    <button onclick = "dessertRecipe()">Recipe</button>
-                    <p id = "dessert" class = ""></p>
-                    
-                    <p class = "p-normal t-space">Click button for a restaurant recomendation</p>
-                    <button onclick = "restaurantRecomendation()">Restaurants</button>
-                    <p id = "restaurant" class = "b-space"></p>
-
-                    <label for = "amount">Tip Calulator:</label>
-                    <input type = "text" id = "amount" placeholder = "Enter Amount">
-                    <button onclick = "tipCalculator()">Calculate Tip</button>
-                    <p id = "tip"></p>
-                    <p id = "total"></p> 
-                </div>
-            </main>
+        </main>
         <footer>
             <div>
                 <a href = "./">UNCC</a> :
@@ -84,7 +55,7 @@
             <script>		
                 document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
                 document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-            </script> 
+            </script>  
         </footer>
     </body>
 </html>

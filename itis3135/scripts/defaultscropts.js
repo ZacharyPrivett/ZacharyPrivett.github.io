@@ -111,5 +111,58 @@ function tipCalculator()
 
 
 
+function polygon()
+{
+    let question = prompt("Zulu Parrot would like you to enter in a number from 3-10");
+
+    if (question == 11)
+    {
+        zoltan();
+        document.getElementById("zoltan").innerHTML = ("Zoltan");
+        document.getElementById("cont").innerHTML = ("The Continuum transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power");
+    }
+    else
+    {
+        let validate = validateEntry(question);
+
+        let userPolygon = getShape(validate);
+
+        alert("Your polygon is a " + userPolygon);
+
+        document.getElementById("user-polygon").innerHTML = ("Your polygon is a " + userPolygon);
+    }
+}   
+
+
+function getShape(numSide)
+{
+    this.numSide = numSide - 3;
+
+    let polygon = ["Triangle", "Quadrilateral", "Pentagon", "Hexagon", "Heptagon", "Octogon", "Nonagon", "Decagon"];
+
+    let userPolygon = polygon[this.numSide];
+
+    return userPolygon;  
+}
+
+function validateEntry(question)
+{
+    this.question = question;
+
+    while (isNaN(this.question) || this.question > 10 || this.question < 3)
+    {
+        this.question = prompt("Invalid Entry! Zulu Parrot would like you to enter in a number from 3-10");
+    }      
+
+    return this.question; 
+}
+
+function zoltan()
+{
+    alert("The Continuum transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power")
+}
+
+
+
 
 

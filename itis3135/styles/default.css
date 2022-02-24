@@ -13,12 +13,11 @@ header
   color: #583E23; 
 }
 
-
 h2
 {
     color: #13262F;
     font-family: 'Italianno', cursive;
-    font-size: 60px;
+    font-size: 65px;
     text-align: center;
 }
 
@@ -64,7 +63,6 @@ footer a
 
 .figure
 {
-    
     display: flex;
     flex-flow: column;
     padding: 5px;
@@ -123,7 +121,6 @@ div
     font-family:Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
-     
 }
 
 main
