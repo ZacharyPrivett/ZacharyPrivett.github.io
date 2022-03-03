@@ -34,7 +34,7 @@
             <main>
                 <h2>First Scripts</h2>
                 <div>
-                    <h3 id = "date"></h3>
+                    <h3 id = "date">date</h3>
 
                     <label for = "name">What is your name?</label>
                     <input type = "text" id = "name" name = "name"><br><br>
@@ -47,26 +47,27 @@
 
                     <label for = "numsquare">Enter a number:</label>
                     <input type = "text" id = "numsquare">
-
                     <button onclick = "numberSquared()">Square</button>
                     <p id = "numsq"></p>
+                    <br>
+                    <br>
 
-                    <button onclick = "rollDice()" class = "button">Roll the Dice</button>
-                    <p id = "rolldice"></p>
+                    <button onclick = "rollDice()">Roll the Dice</button>
+                    <strong><p id = "rolldice" class="p-normal"></p></strong>
 
                     <p class = "p-normal t-space">Click button for a dessert recipe</p>
                     <button onclick = "dessertRecipe()">Recipe</button>
-                    <p id = "dessert" class = ""></p>
+                    <p id = "dessert" class = "p-normal"></p>
                     
                     <p class = "p-normal t-space">Click button for a restaurant recomendation</p>
                     <button onclick = "restaurantRecomendation()">Restaurants</button>
-                    <p id = "restaurant" class = "b-space"></p>
+                    <p id = "restaurant" class = "b-space p-normal"></p>
 
                     <label for = "amount">Tip Calulator:</label>
                     <input type = "text" id = "amount" placeholder = "Enter Amount">
                     <button onclick = "tipCalculator()">Calculate Tip</button>
-                    <p id = "tip"></p>
-                    <p id = "total"></p> 
+                    <p id = "tip" class = "p-normal"></p>
+                    <p id = "total" class = "p-normal"></p> 
                 </div>
             </main>
         <footer>
