@@ -115,13 +115,13 @@ function tipCalculator()
 
 function polygon()
 {
-    let question = prompt("Zulu Parrot would like you to enter in a number from 3-10");
+    let question = prompt("Zulu Parrot would like you to enter in a number from 1-10");
 
     if (question == 11)
     {
         zoltan();
         document.getElementById("zoltan").innerHTML = ("Zoltan");
-        document.getElementById("cont").innerHTML = ("The Continuum transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power");
+        document.getElementById("cont").innerHTML = ("The Continuum Transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power");
     }
     else
     {
@@ -135,12 +135,11 @@ function polygon()
     }
 }   
 
-
 function getShape(numSide)
 {
-    this.numSide = numSide - 3;
+    this.numSide = numSide;
 
-    let polygon = ["Triangle", "Quadrilateral", "Pentagon", "Hexagon", "Heptagon", "Octogon", "Nonagon", "Decagon"];
+    let polygon = ["henagon", "digon","trigon", "tetragon", "Pentagon", "Hexagon", "Heptagon", "Octogon", "Nonagon", "Decagon"];
 
     let userPolygon = polygon[this.numSide];
 
@@ -161,7 +160,7 @@ function validateEntry(question)
 
 function zoltan()
 {
-    alert("The Continuum transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power");
+    alert("The Continuum Transfunctioner is a very mysterious and powerful device. Its mystery is only exceeded by its power");
 }
 
 
