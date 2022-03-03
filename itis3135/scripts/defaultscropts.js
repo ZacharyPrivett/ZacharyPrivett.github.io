@@ -137,9 +137,9 @@ function polygon()
 
 function getShape(numSide)
 {
-    this.numSide = numSide;
+    this.numSide = numSide - 1;
 
-    let polygon = ["henagon", "digon","trigon", "tetragon", "Pentagon", "Hexagon", "Heptagon", "Octogon", "Nonagon", "Decagon"];
+    let polygon = ["henagon", "digon", "trigon", "tetragon", "Pentagon", "Hexagon", "Heptagon", "Octogon", "Nonagon", "Decagon"];
 
     let userPolygon = polygon[this.numSide];
 
