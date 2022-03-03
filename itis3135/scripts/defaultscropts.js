@@ -150,9 +150,9 @@ function validateEntry(question)
 {
     this.question = question;
 
-    while (isNaN(this.question) || this.question > 10 || this.question < 3)
+    while (isNaN(this.question) || this.question > 10 || this.question < 1)
     {
-        this.question = prompt("Invalid Entry! Zulu Parrot would like you to enter in a number from 3-10");
+        this.question = prompt("Invalid Entry! Zulu Parrot would like you to enter in a number from 1-10");
     }      
 
     return this.question; 
