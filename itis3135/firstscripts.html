@@ -35,7 +35,7 @@
         </header>
             <main>
                 <h2>First Scripts</h2>
-                <div>
+                <div class = "div-fscripts">
                     <h3 id = "date">date</h3>
 
                     <label for = "name">What is your name?</label>
@@ -45,31 +45,29 @@
                     <input type = "text" id = "mood" name = "mood"><br><br>
 
                     <button onclick = "welcome()" class = "button"> Submit</button><br>
-                    <p id = "wel-message" class = "p-normal b-space"></p>
+                    <p id = "wel-message" class = "b-space"></p>
 
                     <label for = "numsquare">Enter a number:</label>
                     <input type = "text" id = "numsquare">
                     <button onclick = "numberSquared()">Square</button>
-                    <p id = "numsq"></p>
-                    <br>
-                    <br>
-
-                    <button onclick = "rollDice()">Roll the Dice</button>
-                    <p class="p-normal"><strong id = "rolldice"></strong></p>
-
-                    <p class = "p-normal t-space">Click button for a dessert recipe</p>
-                    <button onclick = "dessertRecipe()">Recipe</button>
-                    <p id = "dessert" class = "p-normal"></p>
+                    <p id = "numsq"></p><br><br>
                     
-                    <p class = "p-normal t-space">Click button for a restaurant recomendation</p>
+                    <button onclick = "rollDice()">Roll the Dice</button>
+                    <strong class = "dice-button" id = "rolldice"></strong>
+
+                    <p class = "t-space">Click button for a dessert recipe</p>
+                    <button onclick = "dessertRecipe()">Recipe</button>
+                    <p id = "dessert"></p>
+                    
+                    <p class = "t-space">Click button for a restaurant recomendation</p>
                     <button onclick = "restaurantRecomendation()">Restaurants</button>
-                    <p id = "restaurant" class = "b-space p-normal"></p>
+                    <p id = "restaurant" class = "b-space"></p>
 
                     <label for = "amount">Tip Calulator:</label>
                     <input type = "text" id = "amount" placeholder = "Enter Amount">
                     <button onclick = "tipCalculator()">Calculate Tip</button>
-                    <p id = "tip" class = "p-normal"></p>
-                    <p id = "total" class = "p-normal"></p> 
+                    <p id = "tip"></p>
+                    <p id = "total"></p> 
                 </div>
             </main>
         <footer>
@@ -91,5 +89,6 @@
                 document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
             </script> 
         </footer>
+        
     </body>
 </html>

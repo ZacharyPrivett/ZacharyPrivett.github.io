@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang = "en-US">
+
 <head>
-    <title>Zachary Privett | ITIS 3135 | Zulu Parrot Contract</title>
+
+    <title>Zachary Privett | ITIS 3135 | Zulu Parrot Arrays</title> 
     
     <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
@@ -13,6 +15,7 @@
 </head>
 
     <body>
+
         <header>
             <h1><a href = "index.html"><img src = "images/parrot_logo.png" alt = "parrot_logo"></a> Privett | ITIS 3135 | Zulu Parrot</h1>
 
@@ -28,40 +31,45 @@
                 <a href = "firstscripts.html">First Scripts</a> :
                 <a href = "polygons.html">Polygons</a> :
                 <a href = "calculator_try.html">Calculator Try</a> :
-                <a href = "calculator_fcc.html">Calculator fcc</a>
+                <a href = "calculator_fcc.html">Calculator fcc</a> :
+                <a href = "arrays.html">Arrays</a>
             </div>
 
         </header>
-        
         <main>
-            <h2>Course Contract</h2>
-            <span>
-            <p>
-               I, Zachary W. Privett agree to abide by the terms of the course contract in my Spring 2022, ITIS-3135 Web App Design and Development with instructor, Professor D.I von Briesen.
-            </p>
-            <p></p>
-            <p>
-                I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
-            </p>
-            <p></p>
-            <p>
-                I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.
-            </p>
-            <p></p>
-            <p>
-                I also understand that given the structure and content of this class it's possible to find many examples online or even view my classmates' code directly. 
-                I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.
-            </p>
-            <p></p>
-            <p>
-                Signed: Zachary W. Privett, 1/25/2022
-            </p>
-            </span>
+            <h2>Arrays</h2>
 
+            <form class = "array-div">
+                <label class = "array-div" for = "employee">Employee: </label>
+                <select form = "employee" id = "employee">
+                    <option>Hugh Honey</option>
+                    <option>Vic Vinegar</option>
+                    <option>John Jacub</option>
+                    <option>Sue Susan</option>
+                    <option>Leonard Washington</option>
+                    <option>Micheal Scott</option>
+                    <option>Ally Alison</option>
+                    <option>Peter Pan</option>
+                    <option>John Madden</option>
+                </select>
+            
+                <label class = "lable_space" for = "salary">Salary: </label>
+                <input type = "text" name = "salary" id = "salary" placeholder = "Enter in a salary"><br><br>
+
+                <input type = "button" value="Add Salary" onclick = "addSalary()"><br><br>
+
+                <input type = "button" value="Display Results" onclick = "displayResults()">
+                <input type = "button" value="Display Salary" onclick = "displaySalary()">
+            </form>
+            <div>
+                <div class = "array-div" id = "results"></div>
+            </div>
+            
+            <div>
+                <div class = "array-div" id = "results_table"> </div>
+            </div>
         </main>
-
         <footer>
-
             <div>
                 <a href = "./">UNCC</a> :
                 <a href = "https://zacharyprivett.github.io/">Github.io</a> :
@@ -81,7 +89,7 @@
             </script>
                 
         </footer>
-       
+        <script src = "scripts/arrays.js"></script>
     </body>
 
 </html>
