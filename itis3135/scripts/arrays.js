@@ -37,9 +37,12 @@ function displayResults()
     }
 
     salaryAverage = salarySum / salaries.length;
+    salaryAverage = salaryAverage.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
-    let pTagString = "<p>The average salary is $" + salaryAverage.toFixed(2).toLocaleString() + "</p>";   
-    let pTagString2 = "<p>The highest salary is $" + salaryMax.toFixed(2).toLocaleString() +  "</p>";
+    salaryMax = salaryMax.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    
+    let pTagString = "<p>The average salary is $" + salaryAverage + "</p>";   
+    let pTagString2 = "<p>The highest salary is $" + salaryMax +  "</p>";
 
     document.getElementById('results').innerHTML = results + pTagString + pTagString2;
 }
@@ -50,7 +53,7 @@ function displaySalary()
 
     for(let i = 0; i < employees.length; i++)
     {
-        createTable += "<tr><td>"+ employees[i] + "</td><td>$" + salaries[i].toFixed(2).toLocaleString() + "</td></tr>";
+        createTable += "<tr><td>"+ employees[i] + "</td><td>$" + salaries[i].toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "</td></tr>";
     }
 
     createTable += "</table>";
