@@ -6,6 +6,8 @@
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel = "stylesheet">
+
+    
     <meta charset = "utf-8">
     <title>Zachary Privett | ITIS 3135 | Zulu Parrot Slide Show</title>
 </head>
@@ -14,12 +16,29 @@
             <div data-include = "components/header.html"></div>
         </header>
         <main>
-            <h2>Course Home Page</h2>
-            <p class = "center-text">This is my home page for ITIS-3135</p>
+            <h2>Slide Show</h2>
+            <div class="container">
+            <div class="slider">
+                <img src="images/parrot_1.JPG" >
+                <img src="images/parrot_2.JPG" class="active">
+                <img src="images/parrot_3.JPG">
+                <img src="images/parrot_4.JPG">
+                <img src="images/parrot_5.JPG">
+                <img src="images/parrot_6.JPG">
+            </div>
+
+            <input type="button" onclick="changeSlide('prev')" value="Previous">
+            <input type="button" onclick="slideShow(this)" value="Start Slide Show">
+            <input type="button" onclick="changeSlide('next')" value="Next">
+
+        </div>    
         </main>
         <footer>
             <div data-include="components/footer.html"></div> 
         </footer>
-        <script src = "scripts/include.js"></script> 
+        <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="scripts/slide_show.js"></script>
+        <script type="text/javascript" src="scripts/include.js"></script> 
+         
     </body>
 </html>
