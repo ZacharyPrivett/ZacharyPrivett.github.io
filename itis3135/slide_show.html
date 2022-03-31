@@ -17,8 +17,8 @@
         </header>
         <main>
             <h2>Slide Show</h2>
-            <div class="container">
-            <div class="slider">
+           
+            <div class="slider container">
                 <img src="images/parrot_1.JPG" class="active">
                 <img src="images/parrot_2.JPG">
                 <img src="images/parrot_3.JPG">
@@ -26,12 +26,14 @@
                 <img src="images/parrot_5.JPG">
                 <img src="images/parrot_6.JPG">
             </div>
+            
 
-            <input type="button" onclick="changeSlide('prev')" value="Previous">
-            <input type="button" onclick="slideShow(this)" value="Start Slide Show">
-            <input type="button" onclick="changeSlide('next')" value="Next">
-
-        </div>    
+            <div class="container">
+                <input type="button" onclick="changeSlide('prev')" value="Previous">
+                <input type="button" onclick="slideShow(this)" value="Start Slide Show">
+                <input type="button" onclick="changeSlide('next')" value="Next">
+            </div>    
+            
         </main>
         <footer>
             <div data-include="components/footer.html"></div> 

@@ -370,8 +370,13 @@ div th
 {
     text-align: center;
     display: table;
-    margin: auto;
-    
+    margin: auto;  
+}
+
+.container input{
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
