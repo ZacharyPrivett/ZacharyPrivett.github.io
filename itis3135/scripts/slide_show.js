@@ -2,8 +2,8 @@
 // https://www.youtube.com/watch?v=JQSxHen1-yI
 
 function slideShow(caller){
-    let interval = serInterval(function () {
-        changeSlide('next')
+    let interval = setInterval(function () {
+        changeSlide('next');
     }, 1000)
 }
 
