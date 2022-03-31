@@ -11,7 +11,7 @@ function slideShow(caller){
 function changeSlide(direction) {
     let currentImg = $('active');
     let nextImg = currentImg.next();
-    let prevIgm = currentImg.prev();
+    let prevImg = currentImg.prev();
 
     if (direction == 'next') {
         if (nextImg.length) {
@@ -20,8 +20,8 @@ function changeSlide(direction) {
             $('.slider img').first().addClass('active');
         }   
     } else {
-        if (prevIgm.length) {
-            prevIgm.addClass('active');
+        if (prevImg.length) {
+            prevImg.addClass('active');
         } else {
             $('.slider img').last().addClass('active')
         }
@@ -30,3 +30,17 @@ function changeSlide(direction) {
 
     currentImg.removeClass('active');
 }
+
+/*
+$(document).ready(function(){
+    $('.next').on('click', function(){
+        let currentImg = $('.active');
+        let nextImg = currentImg.next();
+        
+        if(nextImg.length){
+            currentImg.removeClass('active').css('z-index', -10);
+            nextImg.addClass('active').css('z-index', 10);
+        }
+    });
+}); 
+*/
