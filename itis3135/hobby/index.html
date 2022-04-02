@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <style>
+        body {
+            background: #006994;
+        }
+
+        h1, h2, footer {
+            text-align: center;
+        }
+        
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: justify;
+            font-size: 20px;
+            padding: 5px;
+            color: azure;
+        }
+
+
+    </style>       
+</head>
+<body>
+    <header>
+        <h1>Zach Privett | ITIS 3135 | Hobby</h1>
+        <h2>TRAVEL</h2>
+        <nav>
+            <ul class="tabs">
+                <li class="tab">
+                    <a data-switcher data-tab="1">home</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="2">about</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="3">travel</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="4">islands</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="5">korea</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="6">dominican</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+        <main>
+            <section class="pages">
+                <div class="page" data-page="1">
+                    <h2>home</h2>
+                </div>
+            </section>
+            <section class="pages">
+                <div class="page" data-page="2">
+                    <h2>about me</h2>
+                </div>
+            </section>
+            <section class="pages">
+                <div class="page" data-page="3">
+                    <h2>travel</h2>
+                </div>
+            </section>
+            <section class="pages">
+                <div class="page" data-page="4">
+                    <h2>islands</h2>
+                </div>
+            </section>
+            <section class="pages">
+                <div class="page" data-page="5">
+                    <h2>korea</h2>
+                </div>
+            </section>
+            <section class="pages">
+                <div class="page" data-page="6">
+                    <h2>domincan republic</h2>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <div>
+            <a href = "./">UNCC</a> :
+            <a href = "https://zacharyprivett.github.io/">Github.io</a> |
+            <a href = "https://github.com/ZacharyPrivett">Github</a> |
+            <a href = "https://www.codecademy.com/profiles/Zprivett" >Codecademy</a> |
+            <a href = "https://www.freecodecamp.org/fccde2553d0-9d24-4dbe-9f2c-385c16b15781">FreeCodeCamp</a> |
+            <a href = "https://jsfiddle.net/user/Zprivett">JSFiddle</a> |
+            <a href = "https://www.linkedin.com/in/zachary-privett-47315a223/">LinkedIn</a>
+        </div>
+        
+        <strong>Designed by <a href = "privettenterprise/">Privett Enterprise&copy;2022</a></strong><br><br>   
+        <a href = "https://validator.w3.org/check?uri=" id = "validation_link_html"><img src = "images/button_validation_html5.png" alt = "button_validation_html5"></a>
+        <a href = "https://jigsaw.w3.org/css-validator/check/referer?uri=" id = "validation_link_css" > <img src = "images/button_validation_css.png" alt = "button_validation_css"></a>
+        <script>		
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script> 
+    </footer>
+</body>
+</html>
