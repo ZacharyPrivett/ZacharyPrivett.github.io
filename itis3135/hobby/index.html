@@ -7,21 +7,28 @@
     <title>Hobby</title>
     <style>
         body {
-            background: #006994;
+            background: #0176a5;
         }
 
-        h1, h2, footer {
+        h1, footer {
             text-align: center;
+            padding-bottom: 20px;
+            color: #a1a1a1;
         }
-        
+
         nav {
             text-align: center;
+            background: #009dc4;
+            margin: 0px 200px;
+            border-radius: 8px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav ul {
             margin: 0;
             padding: 0;
             list-style: none;
+            
         }
 
         nav ul li {
@@ -30,20 +37,155 @@
             text-transform: uppercase;
             text-align: justify;
             font-size: 20px;
+            padding: 15px;
+            color: azure; 
+        }
+
+        header nav .tabs .tab:hover a[data-switcher] {
+            background-color: #0176a5;
+            padding: 25px 10px 25px 10px;
+        }
+
+        header nav .tabs .tab.is-active a[data-switcher] {
+            background-color: #0176a5;
+            
+            padding: 25px 10px 25px 10px;
+            
+        }
+
+        header nav .tabs .tab.is-active {
             padding: 5px;
-            color: azure;
+        }
+
+        nav ul li:hover {
+            padding: 5px;
         }
 
 
-    </style>       
+        header nav .tabs .tab a[data-switcher] {
+            cursor: pointer;
+            
+        }
+
+        footer {
+            color: aliceblue;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+        main {
+            margin: 50px 200px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+            text-transform: uppercase;
+            font-size: 40px;
+            padding-bottom: 50px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 21px;
+        }
+
+        .pages {
+            margin-top: 40px;
+            padding: 50px 30px;
+            border-radius: 8px;
+            background-color: #009dc4;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .pages .page {
+            display: none;
+        }
+
+        .pages .page.is-active {
+            display: block;
+        }
+
+        .p {
+            text-align: center;
+        }
+
+        .img-1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        .img-2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .container {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: #444;
+        }
+
+        .container li {
+            font-size: 21px;
+        }
+
+        figure img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+        figcaption {
+            text-align: center;
+        }
+
+    </style>   
+    <script>
+        window.onload = () => {
+            const tab_switchers = document.querySelectorAll('[data-switcher]');
+
+            for (let i = 0; i < tab_switchers.length; i++) {
+                const tab_switcher = tab_switchers[i];
+                const page_id = tab_switcher.dataset.tab;
+
+                tab_switcher.addEventListener('click', () => {
+                   document.querySelector('.tabs .tab.is-active').classList.remove('is-active');
+                   tab_switcher.parentNode.classList.add('is-active');
+                   
+                   SwitchPage(page_id);
+                });
+            }
+        }
+        function SwitchPage(page_id) {
+            const current_page = document.querySelector('.pages .page.is-active');
+            current_page.classList.remove('is-active');
+
+            const next_page = document.querySelector(`.pages .page[data-page="${page_id}"]`)
+            next_page.classList.add('is-active');
+        }
+    </script>    
 </head>
 <body>
     <header>
         <h1>Zach Privett | ITIS 3135 | Hobby</h1>
-        <h2>TRAVEL</h2>
         <nav>
             <ul class="tabs">
-                <li class="tab">
+                <li class="tab is-active">
                     <a data-switcher data-tab="1">home</a>
                 </li>
                 <li class="tab">
@@ -63,35 +205,63 @@
                 </li>
             </ul>
         </nav>
-
     </header>
         <main>
             <section class="pages">
-                <div class="page" data-page="1">
+                <div class="page is-active" data-page="1">
                     <h2>home</h2>
+                    <p class="p">Welcome to my hobby website. A hobby of mine is traveling. There's nothing better than relaxing by a beach or eating great food in another country.</p>
+                    <img class="img-1" src="images/passport.JPG" alt="passport">
                 </div>
-            </section>
-            <section class="pages">
                 <div class="page" data-page="2">
                     <h2>about me</h2>
+                    <p>I wasn't always interested in traveling. The first time I traveled outside of the United States was in late 2018. I had the opportunity to visit and sail around the British Virgin islands.
+                    I had an amazing time and wanted more. That conflicted with the career I had at the time, which was as an automotive technician. Traving is expensive and time consuming. Being a technician is a very
+                    demanding job that can pay well, but at the cost of your free time. I was working 60 hours a week and getting a couple weeks off for vacation isn't always easy to do and I usually had to fight for it.
+                    So, I made the decision to go back to school so I could get into a career that pays better with less hours and more time to travel.</p>
+                    <img class="img-2" src="images/about2.JPG" alt="beach">
                 </div>
-            </section>
-            <section class="pages">
                 <div class="page" data-page="3">
                     <h2>travel</h2>
+                    <div class="container">
+                        <div>
+                            <h3>Reasons to travel:</h3>
+                            <ul>
+                                <li>Good Food</li>
+                                <li>Beautiful Beaches and Cities</li>
+                                <li>Relaxing</li>
+                                <li>New experiences</li>
+                                <li>Really good food!</li>
+                            </ul> 
+                        </div>
+                        <div>
+                            <h3>Reasons to not travel</h3>
+                            <ul>
+                                <li>The pups cannot come with:</li>
+                            </ul>
+                            <figure>
+                                <img src="images/pups3.jpg" alt="pups">
+                                <figcaption>Riley and Fenway</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="pages">
                 <div class="page" data-page="4">
-                    <h2>islands</h2>
+                    <h2>british virgin islands islands</h2>
+                    <p>I spend 10 days sailing around the BVI. We would sail during the day and anchor in the bay of an island at night. 
+                        While ancored we took the dinghy to shore to have dinner and go to the bar. The traditional carribean food there was amazing. 
+                        I learned to sail and the weather was perfect. I'll be back their this summer. </p>
+                    <br><br>
+                    <figure>
+                        <img src="images/bvi4.jpg" alt="2">
+                        <img src="images/bvi5.jpg" alt="3">
+                    </figure>
+
+
                 </div>
-            </section>
-            <section class="pages">
                 <div class="page" data-page="5">
                     <h2>korea</h2>
                 </div>
-            </section>
-            <section class="pages">
                 <div class="page" data-page="6">
                     <h2>domincan republic</h2>
                 </div>
