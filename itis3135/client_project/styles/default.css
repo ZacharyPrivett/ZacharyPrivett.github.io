@@ -49,9 +49,7 @@ nav li
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
-
     position: relative;
-
 }
 
 nav ul li a
@@ -112,4 +110,65 @@ nav ul li a:hover::before
 .gallery img
 {
     width: 100%;
+}
+
+h1 
+{
+    text-align: center;
+    font-size: 60px;
+    color: #4d6364;
+}
+
+.container3
+{
+    margin: 0 auto;
+    width: 550px;
+    border: 15px double #FCC201;
+    background-color: #50C878;
+    color: #607B7D;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    
+}
+
+.container3 p
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container3 h2
+{
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-decoration: underline;
+}
+
+h2 
+{
+    text-align: center;
+    color: #607B7D;
+}
+
+.booking-button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #CC6633;
+    border: #E3E0CD;
+    border-radius: 15px;
+    padding: 30px;
+    color: #607B7D;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer; 
+}
+
+main a
+{
+    text-decoration: none;
 }
