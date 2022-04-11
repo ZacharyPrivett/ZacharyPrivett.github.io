@@ -10,8 +10,8 @@ $(document).ready(function() {
     $("#image_list a").click( evt => {
 
         const link = evt.currentTarget;
+
         // get the image URL and caption for each image and animate the caption
-        //$("#image");
         $("#image").fadeOut(1000, e => {
             $("#image").attr("src", link.href).fadeIn(1000)
         });
@@ -25,6 +25,5 @@ $(document).ready(function() {
            
     // move the focus to the first link
     $("li:first-child a").focus();
-
 
 }); // end ready
