@@ -117,6 +117,13 @@ h1
     text-align: center;
     font-size: 60px;
     color: #4d6364;
+    text-shadow: 1px 1px 1px #FCC201;
+}
+
+p
+{
+    color: #4d6364;
+    font-size: 22px; 
 }
 
 .container3
@@ -171,4 +178,79 @@ h2
 main a
 {
     text-decoration: none;
+}
+
+.gallery2
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.gallery2 img
+{
+    width: 100%;
+    max-height: 550px;
+}
+
+.container4 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #444;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 15px;
+}
+
+.container4 img
+{
+    display: block;
+    float: right;
+    max-height: 600px;
+    padding-right: 40px;
+}
+
+.container4 .booking-button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #CC6633;
+    border: #E3E0CD;
+    border-radius: 15px;
+    padding: 10px;
+    color: #607B7D;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.container4 a
+{
+    color: #50C878;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container4 a:hover
+{
+    color: #FCC201;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.container4 ul
+{
+    padding-left: 30%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 20px;
+    color: #607B7D;
 }
