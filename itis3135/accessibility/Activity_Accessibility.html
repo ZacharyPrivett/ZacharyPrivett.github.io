@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+</head>
+<body>
+  <header>
+    <h1>Candle Delight</h1>
+  </header>
+  <main>
+    <table class="center">
+      <caption></caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th>TYPE</th>
+          <th>PRODUCT</th>
+          <th>FEATURES</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <th>Birthday Candles</th>
+            <td><img class="picture" src="images/Birthday-Candles.jpg"></td>
+            <td>
+              <ol>
+                <li>Comes in a range of fun, vibrant colors</li>
+                <li>Small and slender forms allow you to add as many or as few of them to a dessert you desire</li>
+                <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+              </ol>
+            </td>   
+          </tr>
+          <tr>
+            <th>Votives</th>
+            <td><img class="picture" src="images/voltives.jpeg"></td>
+              <td>
+                <ol>
+                  <li>Inexpensive and easy to use</li>
+                  <li>Bigger than tea lights to provide longer burn times, making them better for longer events</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>Taper Candles</th>
+              <td><img class="picture" src="images/taper-candles.jpg"></td>
+                <td>
+                  <ol>
+                    <li>Commonly know as window candles</li>
+                    <li>Long,slender constructions add dimensions to tables tops</li>
+                  </ol>
+                </td>
+              </tr>
+      </tbody>
+    </table>
+      <div class="container">
+        <h3>Enter your name and phone number to win a gift!</h3>
+        <form action="">
+          <label for="name">Name:</label>
+          <input type="text" for="name" id="name">
+
+          <label for="pnum">Phone Number:</label>
+          <input type="text" name="pnum" id="pnum">
+
+          <input type="button" value="ENTER">
+        </form>
+      </div>  
+     <!--Add the form here-->
+    <div class="container2">
+      <div class="whitespace">
+      <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+      </div>
+    <div class="whitespace">
+      <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+     </div>  
+    </div> 
+  </main>
+
+  <footer>
+    <a href = "https://validator.w3.org/check?uri=" id = "validation_link_html"><img src = "images/button_validation_html5.png" alt = "button_validation_html5"></a>
+    <a href = "https://jigsaw.w3.org/css-validator/check/referer?uri=" id = "validation_link_css" > <img src = "images/button_validation_css.png" alt = "button_validation_css"></a>
+    <script>		
+      document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script> 
+  </footer>
+</body>
+</html>
