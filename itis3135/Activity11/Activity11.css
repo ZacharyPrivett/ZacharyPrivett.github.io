@@ -22,3 +22,8 @@ li {
 p {
 	padding-bottom: .5em;
 }
+
+footer {
+	text-align: center;
+	padding: 30px;
+}
