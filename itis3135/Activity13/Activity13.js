@@ -12,13 +12,12 @@ $(document).ready(function() {
         dataType: "json",
         success: function(data) {
             $("#team").html("");
-            $(data).find("teammembers").children().each(function() {
-                var jsonDoc = $(this);
-                $("#team").append
-                ("<h3>" + jsonDoc.find("name").text() + "</h3>" +
-                          jsonDoc.find("title").text() + "<br>" +
-                          jsonDoc.find("bio").text() + "<br>");
+            $.each(data, function() {
+                $.each(this, function(key, value) { 
+                    $("#team").append(`Name: ${value.name}<br>Title: ${value.title}<br>Bio: ${value.bio}<br><br>` );
+                });
             });
         }
     });
 });
+
