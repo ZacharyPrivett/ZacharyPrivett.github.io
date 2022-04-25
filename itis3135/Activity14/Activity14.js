@@ -8,7 +8,7 @@ $(document).ready(function() {
                     $.each(this, function(key, value) {
                         $("main h1").html(value.title);
                         $("main h2").html(value.month + "" + value.speaker);
-                        $("main img").attr("src",value.image);
+                        $("main img").attr("src", value.image);
                         $("main p").html(value.text);
                     });
                 });
