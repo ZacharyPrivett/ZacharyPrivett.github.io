@@ -104,6 +104,7 @@ li
 ul
 {
     margin-top: 11px;
+    margin-bottom: 11px;
     padding-left: 5%;
     padding-right: 5%;
     text-align: justify;
@@ -385,6 +386,32 @@ div th
     margin-left: 40vh;
     margin-right: 40vh; 
 }
+
+.container3 
+{
+    text-align: center;
+    display: table;
+    margin: auto; 
+}
+
+.container3 h3
+{
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+.container3 img
+{
+    max-width: 82%;
+}
+
+.extra_container
+{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
 
 
 

@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <div class="container"> 
+    <div class="container8"> 
         <img class="logo" src="images/logo_2.JPG" alt="logo" >
         <nav> 
             <ul>
@@ -26,12 +26,28 @@
 <main>
     <h1>Book Appointments Here</h1>
     <div>
-        <label for="fName">First Name</label>
+        <label for="stylist">Stylist:</label>
+        <select name="stylist" id="stylist">
+            <option value="amanda">Amanda</option>
+        </select><br><br>
+
+        <label for="fName">First Name:</label>
         <input type="text" id="fName" placeholder="first name">
 
-        <label for="lName">Last Name</label>
+        <label for="lName">Last Name:</label>
         <input type="text" id="lName" placeholder="last name">
 
+        <label for="time">Time:</label>
+        <input type="datetime" id="time" placeholder="12:45 am">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+
+        <input type="button" value="submit" onclick="booking()">
+    </div>
+    <div>
+        <p class="thankYou"></p>
+        <p class="output"></p>
     </div>
 </main>
 <footer>
