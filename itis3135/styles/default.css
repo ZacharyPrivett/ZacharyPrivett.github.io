@@ -412,6 +412,19 @@ div th
     margin-right: 90px;
 }
 
+.container3 p
+{
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+
+.container3 li
+{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 
 
 
