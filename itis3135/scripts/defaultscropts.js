@@ -115,7 +115,9 @@ function tipCalculator()
 
 function polygon()
 {
-    let question = prompt("Zulu Parrot would like you to enter in a number from 1-10");
+    let number = prompt("Zulu Parrot would like you to enter in a number from 1-10");
+
+    let question = Math.abs(number)
 
     if (question == 11)
     {

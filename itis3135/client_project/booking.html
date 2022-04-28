@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
-    <script src = "scripts/client_scripts.js"></script>
+    
     <title>Luxe Color Lab Booking</title>
 </head>
 <body>
@@ -30,25 +30,35 @@
         <select name="stylist" id="stylist">
             <option value="amanda">Amanda</option>
         </select><br><br>
-
+        
         <label for="fName">First Name:</label>
-        <input type="text" id="fName" placeholder="first name">
+        <input type="text" id="fname" name="fname" placeholder="first name">
 
         <label for="lName">Last Name:</label>
-        <input type="text" id="lName" placeholder="last name">
+        <input type="text" id="lname" name="lname" placeholder="last name">
 
         <label for="time">Time:</label>
-        <input type="datetime" id="time" placeholder="12:45 am">
+        <select name="time" id="time">
+            <option value="8:00 am">8:00 am</option>
+            <option value="9:00 am">9:00 am</option>
+            <option value="10:00 am">10:00 am</option>
+            <option value="11:00 am">11:00 am</option>
+            <option value="12:00 pm">12:00 pm</option>
+            <option value="1:00 pm">1:00 pm</option>
+            <option value="2:00 pm">2:00 pm</option>
+            <option value="3:00 pm">3:00 pm</option>
+            <option value="4:00 am">4:00 pm</option>
+        </select>
 
         <label for="date">Date:</label>
         <input type="date" id="date">
-
         <input type="button" value="submit" onclick="booking()">
     </div>
     <div>
-        <p class="thankYou"></p>
-        <p class="output"></p>
+        <p id="thankYou"></p>
+        <p id="output"></p>
     </div>
+    
 </main>
 <footer>
     <strong>Designed by <a href = "privettenterprise/">Privett Enterprise&copy;2022</a></strong><br><br>   
@@ -58,6 +68,7 @@
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script> 
-</footer>    
+</footer>
+<script src = "scripts/client_scripts.js"></script>    
 </body>
 </html>

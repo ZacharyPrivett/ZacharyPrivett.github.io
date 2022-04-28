@@ -7,7 +7,8 @@ $(document).ready(function() {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("main h1").html(value.title);
-                        $("main h2").html(value.month + "" + value.speaker);
+                        $("main h2").html(value.month);
+                        $("main h3").html(value.speaker)
                         $("main img").attr("src", value.image);
                         $("main p").html(value.text);
                     });

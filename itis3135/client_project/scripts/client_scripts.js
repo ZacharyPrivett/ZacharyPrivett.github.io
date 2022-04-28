@@ -1,5 +1,7 @@
-// Code from "Coding Passive Income" YouTube Channel
+// Slide show code from "Coding Passive Income" YouTube Channel
 // https://www.youtube.com/watch?v=JQSxHen1-yI
+
+//slideshow
 let stopSlideshow = false;
 
 function slideShow(caller) {
@@ -21,7 +23,7 @@ function slideShow(caller) {
     }, 2000);
 }
 
-
+// Slideshow
 function changeSlide(direction) {
     let currentImg = $('.active');
     let nextImg = currentImg.next();
@@ -44,13 +46,31 @@ function changeSlide(direction) {
     currentImg.removeClass('active');  
 }
 
+// booking appointments
 function booking() {
-    let stylist = document.getElementById('stylist').value
-    let fname = document.getElementById('fname').value
-    let lname = document.getElementById('lname').value
-    let time = document.getElementById('time').value
-    let date = document.getElementById('date').value
+    ans = confirm("Confirm Appointment?");
+    
+    if (ans == true) {
+        booked();
+    }
+}
 
-    document.getElementById('thankYou').innerHTML = ("Thank You for Booking with Luxe Color Lab!")
-    document.getElementById('output').innerHTML = ("Appointment for " + fname + "" + lname + " on " + date + " at " + time + " with " + stylist) 
+
+function booked() {
+    let stylist = document.getElementById("stylist").value;
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    let time = document.getElementById('time').value;
+    let date = document.getElementById('date').value;
+
+    if (stylist == "" || fname == "" || lname == "" || time == "" || date == "") {
+
+        alert("Please fill out entire Appointment From");
+    }
+
+    else {
+        alert("Appointment Confirmed");
+        document.getElementById("thankYou").innerHTML = ("Thank You for Booking with Luxe Color Lab!");
+        document.getElementById('output').innerHTML = ("Appointment for " + fname + " " + lname + " on " + date + " at " + time + " with " + stylist); 
+    }
 }
