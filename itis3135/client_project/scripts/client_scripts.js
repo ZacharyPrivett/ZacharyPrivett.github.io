@@ -75,38 +75,4 @@ function booked() {
     }
 }
 
-/*
-$(document).ready(function() {
-        $.ajax({
-            url: "json_files/stylist.json",
-            dataType: "json",
-            success: function(data) {
-                $.each(data, function() {
-                    $.each(this, function(key, value) {
-                        $("main h2").html(value.name);
-                        $("main h2").html(value.month);
-                        $("main h3").html(value.speaker)
-                        $("main img").attr("src", value.image);
-                        $("main p").html(value.text);
-                    });
-                });
-            }
-        });
-    
-});
-*/
-$(document).ready(function() {
-    $.ajax({
-        type: "get",
-        url: "stylist.json",
-        dataType: "json",
-        success: function(data) {
-            $("#team").html("");
-            $.each(data, function() {
-                $.each(this, function(key, value) { 
-                    $("#team").append(`Name: ${value.name}<br>Title: ${value.title}<br>Talent: ${value.talent}<br>Bio: ${value.bio}<br><br>` );
-                });
-            });
-        }
-    });
-});
+
