@@ -317,3 +317,46 @@ main a
     color: #FCC201;
     text-shadow: 1px 1px 1px #000;
 }
+
+footer  
+{
+    font-family: Courier, sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    
+}
+footer a
+{
+    font-family: Courier, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.form
+{
+    display: table;
+    border: 3px solid #FCC201;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.form2
+{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;  
+}
+
+.form label
+{
+    padding-left: 20px;
+}
+
+#b
+{
+    margin-left: 10px;
+}

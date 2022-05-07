@@ -1,5 +1,6 @@
 $(function() {
     $.ajax({
+        method: "GET",
         url: "json_files/stylist.json",
         dataType: "json",
         success: function(data) {
@@ -7,7 +8,7 @@ $(function() {
                 $.each(this, function(key, value) {
                     $("#name").html(value.name);
                     $("#title").html(value.title);
-                    $("#talent").html(value.talent)
+                    $("#talent").html(value.talent);
                     $("#bio").html(value.bio);
                 });
             });

@@ -25,17 +25,17 @@
 </header>
 <main>
     <h1>Book Appointments Here</h1>
-    <div>
+    <div class="form">
         <label for="stylist">Stylist:</label>
         <select name="stylist" id="stylist">
-            <option value="amanda">Amanda</option>
+            <option value="Amanda">Amanda</option>
         </select><br><br>
         
         <label for="fName">First Name:</label>
-        <input type="text" id="fname" name="fname" placeholder="first name">
+        <input type="text" id="fname" name="fname" placeholder="first name" autocomplete="off">
 
         <label for="lName">Last Name:</label>
-        <input type="text" id="lname" name="lname" placeholder="last name">
+        <input type="text" id="lname" name="lname" placeholder="last name" autocomplete="off">
 
         <label for="time">Time:</label>
         <select name="time" id="time">
@@ -52,13 +52,12 @@
 
         <label for="date">Date:</label>
         <input type="date" id="date">
-        <input type="button" value="submit" onclick="booking()">
+        <input type="button" value="submit" id="b" onclick="booking()">
     </div>
+    <br><br>
     <div>
-        <p id="thankYou"></p>
-        <p id="output"></p>
+        <div class="form2" id="thankYou"></div>  
     </div>
-    
 </main>
 <footer>
     <strong>Designed by <a href = "privettenterprise/">Privett Enterprise&copy;2022</a></strong><br><br>   

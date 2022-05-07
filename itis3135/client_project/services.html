@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
-    <script src = "scripts/client_scripts.js"></script>
+    <link href="styles/default.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <title>Luxe Color Lab Services</title>
 </head>
 <body>
@@ -25,23 +27,106 @@
 </header>
     <main>
         <h1>Stylists Services</h1>
+        <h2>Amandas Services and Prices</h2>
         <div class="container3">
-            <h2>Amandas Services and Prices</h2>
-            <p>All over color: $130</p>
-            <p>Base color retouch: $75</p>
-            <p>Base retouch w/Eclipse: $190</p>
-            <p>Colorance: $75</p>
-            <p>Double process: $130</p>
-            <p>Eclipse: $125</p>
-            <p>Elumen glaze: $45</p>
-            <p>Full foil: $195</p>
-            <p>Partial foil: $160</p>
-            <p>New blonde: $35</p>
-            <p>Hair cut male/female: $75</p>
-            <p>Shampoo & style: $40</p>
-            <p>Brazillian blowout: $350</p>
-            <p>Balayage Starts @ $195</p>
-            <p>Color correction: $100/hr</p>
+            <div id="accordion">
+                <h3>All over color: $130</h3>
+            <div>
+                <ul>
+                    <li>One-step process that involves coating the hair with a single shade.</li>
+                </ul>
+            </div>
+                <h3>Base color retouch: $75</h3>
+            <div>
+                <ul>
+                    <li>Single color added to root area.</li>
+                </ul>
+            </div>
+                <h3>Base retouch w/Eclipse: $190</h3>
+            <div>
+                <ul>
+                    <li>Single color added to root area with eclipse solution that makes hair feel and look more full.</li>
+                </ul>
+            </div>    
+                <h3>Colorance: $75</h3>
+            <div>
+                <ul>
+                    <li>Demi-permanent hair color.</li>
+                    <li>Contrains no ammonia and gets under the outer cuticle of the hair, meaning that it will wash out gradually.</li>   
+                    <li>Best for blending grey hair.</li> 
+                </ul>
+            </div>
+                <h3>Double process: $130</h3>
+            <div>
+                <ul>
+                    <li>Double process color. Two-step sercie that starts by lightening the hair first then applying a color or glaze.</li>
+                </ul>
+            </div>
+                <h3>Eclipse: $125</h3>
+            <div>
+                <ul>
+                    <li>Eclipse solution that makes hair feel and look more full</li>
+                </ul>
+            </div>
+                <h3>Elumen glaze: $45</h3>
+            <div>
+                <ul>
+                    <li>Low pH acid color</li>
+                    <li>Produces a diamond-like shine</li>
+                    <li>Leaves hair super soft and reduces frizz</li>
+                </ul>
+            </div>
+                <h3>Full foil: $195</h3>
+            <div>
+                <ul>
+                  <li>A full foil consists of placing between 45 and 100 foils our the entire head</li>
+                  <li>Go from dark hair to almost completely blond</li>
+                </ul>
+            </div>
+                <h3>Partial foil: $160</h3>
+            <div>
+                <ul>
+                    <li>Blonds less strands of hair than a full foil</li>
+                    <li>More natural sun bleach hair look</li>
+                </ul>
+            </div>
+                <h3>New blonde: $35</h3>
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+                <h3>Hair cut male/female: $75</h3>
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+                <h3>Shampoo & style: $40</h3>
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+                <h3>Brazillian blowout: $350</h3>
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+                <h3>Balayage Starts @ $195</h3>
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+                <h3>Color correction: $100/hr</h3>
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            </div>
         </div>
             <div class="booking">
                 <p><a href="booking.html">Book With Amanda</a></p>
@@ -55,7 +140,7 @@
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script> 
-</footer>    
-    
+</footer>
+    <script src="scripts/accordion_script.js"></script>      
 </body>
 </html>
