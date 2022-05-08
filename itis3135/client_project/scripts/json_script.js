@@ -34,12 +34,12 @@ $(function() {
         }
     });
 });
-
+*/
 
 $(document).ready(function() {
     $.ajax({
         type: "get",
-        url: "team.json",
+        url: "json_files/stylists.json",
         beforeSend: function() {
             $("#team").html("Loading...");
         },
@@ -52,14 +52,14 @@ $(document).ready(function() {
             $("#team").html("");
             $.each(data, function() {
                 $.each(this, function(key, value) { 
-                    $("#team").append(`Name: ${value.name}<br>Title: ${value.title}<br>Bio: ${value.bio}<br><br>` );
+                    $("#team").append(`Name: ${value.name}<br>Title: ${value.title}<br>Talent: ${value.talent}<br>Bio: ${value.bio}<br><br>` );
                 });
             });
         }
     });
 });
-*/
 
+/*
 $(document).ready(function() {
     $.ajax({
         type: "get",
@@ -79,3 +79,4 @@ $(document).ready(function() {
     });
 });
 
+*/
