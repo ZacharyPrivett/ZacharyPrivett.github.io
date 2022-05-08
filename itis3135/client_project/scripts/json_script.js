@@ -36,7 +36,7 @@ $(function() {
 });
 */
 
-$(function() {
+$(document).ready(function() {
     $.ajax({
         type: "get",
         url: "json_files/stylist.json",
