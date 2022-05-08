@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/default.css" type="text/css" rel="stylesheet">
-    <script src="scripts/client_scripts.js"></script>
-    <script src="scripts/json_script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <title>Luxe Color Lab Stylists</title>
 </head>
@@ -32,14 +29,17 @@
             <div>
                 <img src="images/stylist_2.jpg" alt="stylist_2">
             </div>
-            <div id="team"></div>
-
+            <div id="team">
+                <h2 id="name">Amanda</h2>
+                <p id="title">Owner and Stylist at Luxe Color Lab</p>
+                <p id="talent">Specializes in color and color correction</p>
+                <p id="bio">I have been a stylist for 18 years. I worked in Sarasota Florida for 13 years before coming to Charlotte 4 years ago. I have owned my salon, Luxe Color Lab, for over a year and I have began to expand. Color correction and blonding is what I specialize in, but I am also well versed in precision hair cutting</p>
                 <a href="booking.html">Book With Amanda</a>
-            
+            </div>
         </div>
     </main>
 <footer>
-    <strong>Designed by <a href = "privettenterprise/">Privett Enterprise&copy;2022</a></strong><br><br>   
+    <strong>Designed by <a href = "https://webpages.charlotte.edu/zprivet1/itis3135/privettenterprise/">Privett Enterprise&copy;2022</a></strong><br><br>   
         <a href = "https://validator.w3.org/check?uri=" id = "validation_link_html"><img src = "images/button_validation_html5.png" alt = "button_validation_html5"></a>
         <a href = "https://jigsaw.w3.org/css-validator/check/referer?uri=" id = "validation_link_css" > <img src = "images/button_validation_css.png" alt = "button_validation_css"></a>
     <script>		
@@ -47,6 +47,8 @@
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script> 
 </footer> 
-
+    <script src="scripts/client_scripts.js"></script>
+    <script src="scripts/json_script.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
 </body>
 </html>

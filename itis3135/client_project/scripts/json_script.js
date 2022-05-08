@@ -34,7 +34,7 @@ $(function() {
         }
     });
 });
-*/
+
 
 $(document).ready(function() {
     $.ajax({
@@ -58,8 +58,8 @@ $(document).ready(function() {
         }
     });
 });
+*/
 
-/*
 $(document).ready(function() {
     $.ajax({
         type: "get",
@@ -79,4 +79,3 @@ $(document).ready(function() {
     });
 });
 
-*/
